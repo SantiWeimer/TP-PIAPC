@@ -5,7 +5,7 @@ using UnityEngine;
 public class EstadoCansado : MonoBehaviour
 {
     
-    public Color colorEstado = Color.blue;
+    
     public float duracionDescanso = 10f;
     public Animator animator;
 
@@ -23,7 +23,7 @@ public class EstadoCansado : MonoBehaviour
 
     void OnEnable(){
 
-        maquinaDeEstados.Indicador.material.color = colorEstado;
+        
         animator.enabled = false;
         tiempoDescansando = 0f;
         

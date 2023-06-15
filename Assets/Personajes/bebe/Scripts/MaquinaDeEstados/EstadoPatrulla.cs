@@ -5,7 +5,7 @@ using UnityEngine;
 public class EstadoPatrulla : MonoBehaviour
 {
     public Transform[] WayPoints;
-    public Color colorEstado = Color.green;
+    
     public Animator animator;
 
     private MaquinaDeEstados maquinaDeEstados;
@@ -58,7 +58,7 @@ public class EstadoPatrulla : MonoBehaviour
     void OnEnable(){
 
         animator.enabled = true;
-        maquinaDeEstados.Indicador.material.color = colorEstado;
+        
         ActualizarWayPointDestino();
 
     }

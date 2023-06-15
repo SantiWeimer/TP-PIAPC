@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EstadoPersecucion : MonoBehaviour
 {
-    public Color colorEstado = Color.red;
+    
     public float duracionPersecucion = 10f;
     public Animator animator;
 
@@ -22,8 +22,6 @@ public class EstadoPersecucion : MonoBehaviour
     }
 
     void OnEnable(){
-
-        maquinaDeEstados.Indicador.material.color = colorEstado;
 
         tiempoPersiguiendo = 0f;
         

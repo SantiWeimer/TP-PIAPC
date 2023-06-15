@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControladorNavMesh : MonoBehaviour
 {
-    [HideInInspector]
+    
     public Transform perseguirObjetivo;
     private UnityEngine.AI.NavMeshAgent navMeshAgent;
     

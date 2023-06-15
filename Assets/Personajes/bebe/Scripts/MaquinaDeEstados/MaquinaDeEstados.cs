@@ -8,9 +8,8 @@ public class MaquinaDeEstados : MonoBehaviour
     public MonoBehaviour EstadoAlerta;
     public MonoBehaviour EstadoPersecucion;
     public MonoBehaviour EstadoCansado;
+    public MonoBehaviour EstadoDerrotado;
     public MonoBehaviour EstadoInicial;
-
-    public MeshRenderer Indicador;
 
 
     private MonoBehaviour estadoActual;

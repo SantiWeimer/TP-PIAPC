@@ -15,7 +15,7 @@ public class ControladorVision : MonoBehaviour
         controladorNavMesh = GetComponent<ControladorNavMesh>();
     }
 
-    public bool PuedeVerAlJugador(out RaycastHit hit, bool mirarHaciaElJugador = false) 
+    public bool PuedeVerAlJugador(out RaycastHit hitOjo, bool mirarHaciaElJugador = false) 
     {
         Vector3 vectorDireccion;
 
@@ -27,6 +27,6 @@ public class ControladorVision : MonoBehaviour
             vectorDireccion = Ojos.forward;
         }
 
-        return Physics.Raycast(Ojos.position, vectorDireccion,out hit, rangoVision) && hit.collider.CompareTag("Player");
+        return Physics.Raycast(Ojos.position, vectorDireccion,out hitOjo, rangoVision) && hitOjo.collider.CompareTag("Player");
     }
 }
